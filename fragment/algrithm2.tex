@@ -1,0 +1,27 @@
+\usepackage{algorithm}  
+\usepackage{algorithmic}
+
+\begin{algorithm}
+\caption{Calculate $y=x^n$}
+\label{alg:alg1}
+\begin{algorithmic}
+\REQUIRE  $n \geq 0 \vee x \neq 0$
+\ENSURE $y = x^n$
+\STATE $y \Leftarrow 1$
+\IF {$n < 0$}
+\STATE $X \Leftarrow 1/ x$
+\STATE $N \Leftarrow -n$
+\ELSE
+\STATE $X \Leftarrow x$
+\STATE $N \Leftarrow n$
+\ENDIF
+
+\WHILE{$N \neq 0$}
+\IF{$N$ is even}
+\STATE $X \Leftarrow X \times X$
+\ELSE[$N$ is odd]
+\STATE $y \Leftarrow y \times X$
+\ENDIF
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}

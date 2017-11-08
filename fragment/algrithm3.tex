@@ -1,0 +1,21 @@
+\usepackage{algorithm}  
+\usepackage{algorithmic}
+
+
+\begin{algorithm}
+\caption{Framework of ensemble learning for our system}
+\label{alg:framwork}
+\begin{algorithmic}[1]  %这个1表示每行都显示数字
+\REQUIRE ~~\\
+The set of positive samples for current batch, $P_n$;
+\ENSURE ~~\\
+Ensemble of classifiers on the current batch, $E_n$;
+\STATE Extracting the set of reliable negative and/or positive samples $T_n$ from $U_n$;
+\label{code:fram:extract} %对此行的标记，方便在文中引用算法的某个步骤
+\STATE do something ....;
+\STATE do something ....;
+\STATE do something ....;
+\RETURN $E_n$; %算法的返回值
+
+\end{algorithmic}
+\end{algorithm}
